@@ -1,4 +1,4 @@
-name: Set up node using nvm
+name: Set up node using nvm (use npmmirror.com)
 description: Sets up a specific node.js version using nvm
 author: dcodeIO
 inputs:
