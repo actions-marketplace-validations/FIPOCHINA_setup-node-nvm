@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-export NVM_DIR="./mynvm"
+export NVM_DIR="$GITHUB_WORKSPACE/.nvm"
 export NVM_NODEJS_ORG_MIRROR="$2"
 git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
 cd  "$NVM_DIR"
