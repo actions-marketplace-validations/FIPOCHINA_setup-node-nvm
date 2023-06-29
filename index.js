@@ -23,7 +23,7 @@ async function resolveVersion(version, mirror) {
 }
 
 (async () => {
-  let mirror = core.getInput("node-mirror") || "https://nodejs.org/dist/";
+  let mirror = core.getInput("node-mirror") || "https://npmmirror.com/mirrors/node/";
   let version = await resolveVersion(core.getInput("node-version"), mirror);
   if (process.platform == "win32") {
     runScript("powershell", ".\\install.ps1", version, mirror);
